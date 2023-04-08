@@ -102279,7 +102279,7 @@ const data=[
 ];
 var p=[];
 for(var i=0;i<data.length;i++){
-  p.push(data[i].Name);
+  p.push(data[i].Symbol);
 }
 const countries=p;
 
@@ -102293,12 +102293,19 @@ function displaySuggestions(event) {
     if(x>=5){
       return;
     }
-    const li = document.createElement('p');
+    const li = document.createElement('button');
     li.textContent = suggestion;
+   li.addEventListener(onclick,()=>{
+    alert("GO");
+   });
     suggestionsList.appendChild(li);
   
 
   });
+}
+function clickevent(event){
+  const value=event.Name;
+ alert(value);
 }
 
 searchInput.addEventListener('input', displaySuggestions);
