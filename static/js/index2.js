@@ -17,8 +17,9 @@ $(".progressp").each(function(){
     });
   });
 
+// const sym = document.getElementById("symbol").innerHTML;
 
-  
+// const sym = "AA";
 const data = [
     {
       "Symbol": "A",
@@ -102292,7 +102293,7 @@ const data = [
       "Industry": "Other Pharmaceuticals"
     }
   ]
-  const sym = "AA";
+// const sym = "AA";
 let ind=-1;
 let i=0;
 data.forEach(element => {
@@ -102302,7 +102303,7 @@ data.forEach(element => {
     i=i+1;
 });
   const stock =  data[ind];
-  const nam = stock.Name;
+  const nam = stock['Name'];
   const mktCap = stock["Market Cap"];
   const sector = stock.Sector;
   const industry = stock.Industry;

@@ -102277,7 +102277,7 @@ const data=[
     "Industry": "Other Pharmaceuticals"
   }
 ];
-
+// alert(x);
 var p=[];
 for(var i=0;i<data.length;i++){
   p.push(data[i].Symbol);
@@ -102328,10 +102328,4 @@ async function secondTask() {
 
 }
 
-doTasks(); 
-
-
-
-
-
-
+doTasks();
