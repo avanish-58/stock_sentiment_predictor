@@ -1,0 +1,151 @@
+.nav{
+    margin-left: 600px;
+}
+.grid-container{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin: 0%;
+    height: 800px;
+}
+.main{
+    background-color: #003765;
+    width: 719px;
+    
+    margin: 0%;
+}
+
+.btn{
+    
+    width: 199px;
+    height: 73px;
+    border-radius: 9px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+img{
+    width: 626px;
+    height: 417px;
+    margin-left: 100px;
+    margin-top: 148px;
+}
+.right{
+    background-color: #CEE3FE;
+    margin: 0%;
+    width: 900px;
+}
+
+.txt{
+    width: 442px;
+    height: 231px;
+    left: 58px;
+    
+    margin-top: 148px;
+    font-style: ExtraBold;
+    font-size: 64px;
+    line-height: 77px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 30px;
+    background: linear-gradient(#E1F1FF,#94C7F2);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+.subright{
+    position: absolute;
+
+height: 24px;
+display: flex;
+top: 27px;
+
+
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #003765;
+}
+.one{
+    margin-left: 400px;
+}
+.two{
+    margin-left: 50px;
+}
+.three{
+    margin-left: 50px;
+}
+.input-bar{
+    position: absolute;
+    width: 50px;
+height: 70px;
+left: 35px;
+top: 400px;
+
+background: #FAFAFA;
+border-radius: 1px;
+}
+.foot{
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* width:100%; */
+}
+.f-logo{
+    width: 4%;
+    height: 4%;
+}
+.f-ul {
+    list-style-type: none;
+    margin: 2.5px;
+    padding: 2.5px;
+    /* margin-left: 23%; */
+    /* margin-right: 23%; */
+    overflow: hidden;
+    width: 100%;
+    /* background-color: #333333; */
+    display: flex;
+    flex-direction:row-reverse;
+  }
+  
+.f-li {
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+.f-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+.f-li a:hover {
+    background-color: #111111;
+}
+
+.input-bar{
+    width:40%;
+}
+
+.f-txt{
+    /* font-style: ExtraBold; */
+    /* font-size: 64px; */
+    /* line-height: 77px;/ */
+    /* line-height: 100%; */
+    /* text-align: left; */
+    /* vertical-align: top; */
+    /* margin-left: 30px; */
+    /* background: linear-gradient(#E1F1FF, #94C7F2); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
