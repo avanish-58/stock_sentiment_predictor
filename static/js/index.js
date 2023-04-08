@@ -102294,9 +102294,10 @@ function displaySuggestions(event) {
     if(x>=4){
       return;
     }
-    const li = document.createElement('li');
-    li.textContent = suggestion;
+    const li = document.createElement('button');
     li.type="button";
+    li.textContent = suggestion;
+    
     li.id="id"+x.toString();
     li.classList.add("elem");
    li.addEventListener('click', () => {

@@ -20,7 +20,7 @@
     height: 73px;
     border-radius: 9px;
     margin-left: 30px;
-    margin-top: 90px;
+    margin-top: 00px;
 }
 img{
     width: 626px;
@@ -154,13 +154,16 @@ border-radius: 1px;
     display: flex;  
     flex-direction: column;
     height: 70px;
+    
 }
 .elem{
     width: 200px;
     margin: 2.5px;
     padding: 2.5px;
     margin-left: 30px;
-    background-color: white;
+    background-color:#CEE3FE;
     color: black;
     text-align: center;
+    border-radius: 10px;
+    
 }
