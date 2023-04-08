@@ -1,10 +1,4 @@
-
-
-const searchInput = document.getElementById('search');
-const suggestionsList = document.getElementById('suggestions');
-
-
-const data=[
+[
   {
     "Symbol": "A",
     "Name": "Agilent Technologies Inc. Common Stock",
@@ -102276,29 +102270,4 @@ const data=[
     "Sector": "Health Care",
     "Industry": "Other Pharmaceuticals"
   }
-];
-var p=[];
-for(var i=0;i<data.length;i++){
-  p.push(data[i].Name);
-}
-const countries=p;
-
-function displaySuggestions(event) {
-  const searchText = event.target.value.toLowerCase();
-  const suggestions = countries.filter(country => country.toLowerCase().startsWith(searchText));
-  suggestionsList.innerHTML = '';
-  var x=0;
-  suggestions.forEach(suggestion => {
-    x++;
-    if(x>=5){
-      return;
-    }
-    const li = document.createElement('p');
-    li.textContent = suggestion;
-    suggestionsList.appendChild(li);
-  
-
-  });
-}
-
-searchInput.addEventListener('input', displaySuggestions);
+]
