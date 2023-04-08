@@ -102277,7 +102277,7 @@ const data=[
     "Industry": "Other Pharmaceuticals"
   }
 ];
-alert(x);
+
 var p=[];
 for(var i=0;i<data.length;i++){
   p.push(data[i].Symbol);
@@ -102291,14 +102291,18 @@ function displaySuggestions(event) {
   var x=0;
   suggestions.forEach(suggestion => {
     x++;
-    if(x>=5){
+    if(x>=4){
       return;
     }
-    const li = document.createElement('button');
+    const li = document.createElement('li');
     li.textContent = suggestion;
     li.type="button";
     li.id="id"+x.toString();
-    alert(li.id);
+    li.classList.add("elem");
+   li.addEventListener('click', () => {
+     searchInput.value=suggestion;
+    });
+  
    
     suggestionsList.appendChild(li);
   
@@ -102308,13 +102312,24 @@ function displaySuggestions(event) {
 function clickevent(event){
   alert("GO");
 }
+async function doTasks() {
+  // First task
+  await secondTask();
 
+  // Second task
+  await firstTask();
+}
 
+async function firstTask() {
+  searchInput.addEventListener('input', displaySuggestions);
+}
 
-  
- searchInput.addEventListener('input', displaySuggestions);
- 
- 
+async function secondTask() {
+
+}
+
+doTasks(); 
+
 
 
 
