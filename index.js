@@ -102277,6 +102277,7 @@ const data=[
     "Industry": "Other Pharmaceuticals"
   }
 ];
+alert(x);
 var p=[];
 for(var i=0;i<data.length;i++){
   p.push(data[i].Symbol);
@@ -102295,17 +102296,27 @@ function displaySuggestions(event) {
     }
     const li = document.createElement('button');
     li.textContent = suggestion;
-   li.addEventListener(onclick,()=>{
-    alert("GO");
-   });
+    li.type="button";
+    li.id="id"+x.toString();
+    alert(li.id);
+   
     suggestionsList.appendChild(li);
   
 
   });
 }
 function clickevent(event){
-  const value=event.Name;
- alert(value);
+  alert("GO");
 }
 
-searchInput.addEventListener('input', displaySuggestions);
+
+
+  
+ searchInput.addEventListener('input', displaySuggestions);
+ 
+ 
+
+
+
+
+
